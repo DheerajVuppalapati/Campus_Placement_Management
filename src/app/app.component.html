@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="students" routerLinkActive="active">Student List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="create-student" routerLinkActive="active">Add Student</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="departments" routerLinkActive="active">Department List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="create-department" routerLinkActive="active">Add Department</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="staff" routerLinkActive="active">staff List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="create-staff" routerLinkActive="active">Add Staff </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="placements" routerLinkActive="active">Placement List </a>
+        </li> -->
+    </ul>
+</nav>
+
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+<!-- <footer class="footer">
+    <div class="container">
+        <span>All Rights Reserved by Vignan</span>
+    </div>
+</footer> -->

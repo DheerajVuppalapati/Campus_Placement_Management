@@ -1,0 +1,35 @@
+<h2>
+    Department-List
+</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Department_Id</th>
+            <th>Department_Name</th>
+            <th>Department_Head</th>
+            <th>Department_Co-ordinator</th>
+            <th>Staff_List</th>
+            <th>Student_List</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let department of departments">
+            <td>{{department.departmentId}}</td>
+            <td>{{department.departmentName}}</td>
+            <td>{{department.departmentHead}}</td>
+            <td>{{department.departmentCoordinate}}</td>
+            
+            <td>
+                <table class="table table-striped">
+                    {{department.staff}}
+                </table>
+            </td>
+            <td>
+                <table class="table table-striped">
+                    {{department.student}}
+                </table></td>
+        </tr>
+    </tbody>
+   
+</table>
